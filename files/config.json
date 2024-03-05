@@ -1,0 +1,9 @@
+{
+	"maxBots": 150,
+	"name": "",
+	"useAccounts": false,
+	"skinToUse": 0,
+	"skinChanger": false,
+	"proxyType": "socks4",
+	"useProxies": true
+}
