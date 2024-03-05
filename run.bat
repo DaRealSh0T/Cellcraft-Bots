@@ -9,20 +9,8 @@ if %errorlevel% neq 0 (
 
 if not exist node_modules (
 
-    pnpm -v >nul 2>&1
-    if %errorlevel% equ 0 (
-        echo Using pnpm to install dependencies.
-        pnpm install
-    ) else (
-      yarn version >nul 2>&1
-      if %errorlevel% equ 0 (
-          echo Using Yarn to install dependencies.
-          yarn install
-      ) else (
           echo Using npm to install dependencies.
           npm install
-      )
-    )
 
     echo Dependencies installed successfully.
 )
